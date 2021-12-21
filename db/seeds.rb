@@ -14,7 +14,7 @@ puts "🌱 Seeding data..."
   rand(1..5).times do
     Review.create(
       score: rand(1..10),
-      comment: Faker::Lorem.sentence,
+      comment: Faker::Fantasy::Tolkien.poem,
       game_id: game.id # use the ID (primary key) of the game as the foreign key
     )
   end
